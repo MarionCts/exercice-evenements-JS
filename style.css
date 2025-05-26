@@ -41,3 +41,7 @@
 .lightBlue {
     background-color: lightskyblue;
 }
+
+.cliquable {
+    cursor: pointer;
+}

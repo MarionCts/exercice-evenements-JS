@@ -58,3 +58,32 @@ boutonToggle.addEventListener("click", function(e) {
 
 // EXO 7
 
+const boutonAjouter = document.querySelector("#ajouter");
+const listeElements = document.querySelector("#listeElements");
+
+boutonAjouter.addEventListener("click", function(e) {
+    let listeElementsLi = document.createElement("li");
+    listeElementsLi.textContent = "Nouvel élément ajouté";
+    listeElements.append(listeElementsLi);
+})
+
+// EXO 8
+
+texteCliquable = document.querySelectorAll(".cliquable");
+
+for (let li of texteCliquable) {
+    li.addEventListener("click", function(e) {
+    li.remove();
+})
+}
+
+// EXO 9
+
+const champClavier = document.querySelector("#champClavier");
+const messageClavier = document.querySelector("#messageClavier");
+
+champClavier.addEventListener("keyup", function(e) {
+    if (e.code === "Enter") {
+        messageClavier.textContent = "Vous avez appuyé sur la touche Entrée."
+    }
+})

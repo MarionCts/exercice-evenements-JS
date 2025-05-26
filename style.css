@@ -4,6 +4,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* BUTTONS STYLE */
+
+.btn {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(93, 114, 196, 0.5);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    background-color: rgb(20, 58, 170);
 }
 
 .container {

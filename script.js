@@ -25,3 +25,14 @@ zone.addEventListener("mouseover", function(e){
 zone.addEventListener("mouseout", function(e){
     zone.classList.remove("lightBlue");
 })
+
+// EXO 4
+
+const resultat = document.querySelector("#resultat");
+const boutonCompter = document.querySelector("#compter");
+const nombreClics = [];
+
+boutonCompter.addEventListener("click", function(e) {
+    nombreClics.push("");
+    resultat.textContent = `Vous avez cliqué ${nombreClics.length} fois depuis le chargement de la page.`;
+})

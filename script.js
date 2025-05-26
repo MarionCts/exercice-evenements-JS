@@ -36,3 +36,13 @@ boutonCompter.addEventListener("click", function(e) {
     nombreClics.push("");
     resultat.textContent = `Vous avez cliqué ${nombreClics.length} fois depuis le chargement de la page.`;
 })
+
+// EXO 5
+
+const input = document.querySelector("#champNom");
+const boutonAfficherNom = document.querySelector("#afficherNom");
+const message = document.querySelector("#message");
+
+boutonAfficherNom.addEventListener("click", function(e) {
+    message.textContent = `Bonjour, ${input.value}`;
+})

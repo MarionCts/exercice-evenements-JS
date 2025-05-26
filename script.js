@@ -46,3 +46,15 @@ const message = document.querySelector("#message");
 boutonAfficherNom.addEventListener("click", function(e) {
     message.textContent = `Bonjour, ${input.value}`;
 })
+
+// EXO 6
+
+const inputTexte = document.querySelector("#champTexte");
+const boutonToggle = document.querySelector("#toggleChamp");
+
+boutonToggle.addEventListener("click", function(e) {
+    inputTexte.toggleAttribute("disabled");
+})
+
+// EXO 7
+

@@ -45,3 +45,7 @@
 .cliquable {
     cursor: pointer;
 }
+
+.cacher {
+    display: none;
+}

@@ -87,3 +87,16 @@ champClavier.addEventListener("keyup", function(e) {
         messageClavier.textContent = "Vous avez appuyé sur la touche Entrée."
     }
 })
+
+// EXO 10
+
+const filtreAnimaux = document.querySelector("#filtreAnimaux");
+let animal = document.querySelectorAll(".animal");
+
+filtreAnimaux.addEventListener("input", function(e) {
+for (let item of animal) {
+    if (!item.textContent.includes(filtreAnimaux.value)) {
+        item.classList.add("cacher");
+    }
+}
+})
